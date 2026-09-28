@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  bitnet-edge-inference:
+    image: python:3.11-slim
+    container_name: bitnet-edge-node
+    command: python bitlinear_kernel.py
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    environment:
+      - OMP_NUM_THREADS=4
+      - BITNET_PRECISION=1.58BIT
+    restart: unless-stopped

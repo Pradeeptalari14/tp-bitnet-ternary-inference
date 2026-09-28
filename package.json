@@ -1,0 +1,12 @@
+{
+  "name": "tp-bitnet-ternary-inference",
+  "version": "1.0.0",
+  "description": "Microsoft BitNet b1.58 1-bit ternary LLM inference engine with multiplication-free integer addition kernels and zero-GPU edge execution",
+  "main": "ternary_quantizer.ts",
+  "scripts": {
+    "test": "bash scripts/validate.sh"
+  },
+  "keywords": ["bitnet", "1.58-bit", "ternary", "quantization", "edge-ai", "cpu-simd", "sre"],
+  "author": "Talari Pradeep <talaripradeep14@gmail.com>",
+  "license": "MIT"
+}
